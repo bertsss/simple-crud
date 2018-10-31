@@ -39,12 +39,12 @@ export class AddComponent{
             success: function(data){
                 angular.form.id = data.uri.split('/')[4]
                 angular.list.push(angular.form)
-                angular.router.navigate(['/dashboard'])
+                angular.router.navigate(['/view/'+angular.form.id])
             }
         });
     }
-}
 
-export function getList() {
-    return this.list
+    public back() {
+        this.router.navigate(['/'])
+    }
 }

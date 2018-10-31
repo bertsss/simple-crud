@@ -6,6 +6,8 @@ import { DashboardComponent } from './dashboard/dashboard.component'
 import { LoginComponent } from './login/login.component';
 import { NotFoundComponent } from './not-found.component';
 import { AddComponent } from './item/add.component';
+import { ViewComponent } from './item/view.component';
+import { UpdateComponent } from './item/update.component';
 
 const routes: Routes = [
   {
@@ -19,6 +21,14 @@ const routes: Routes = [
   {
     path: 'add',
     component: AddComponent
+  },
+  {
+    path: 'view/:id',
+    component: ViewComponent
+  },
+  {
+    path: 'update/:id',
+    component: UpdateComponent
   },
   {
     path: '**',

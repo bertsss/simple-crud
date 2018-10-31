@@ -11,6 +11,8 @@ import { CookieService } from 'ngx-cookie-service';
 import { SocialLoginModule, AuthServiceConfig, FacebookLoginProvider } from "angular5-social-login";
 import { NotFoundComponent } from './not-found.component';
 import { AddComponent } from './item/add.component';
+import { ViewComponent } from './item/view.component';
+import { UpdateComponent } from './item/update.component';
 
 export function getAuthServiceConfigs() {
   let config = new AuthServiceConfig(
@@ -30,7 +32,9 @@ export function getAuthServiceConfigs() {
     LoginComponent,
     DashboardComponent,
     NotFoundComponent,
-    AddComponent
+    AddComponent,
+    ViewComponent,
+    UpdateComponent
     
   ],
   imports: [
